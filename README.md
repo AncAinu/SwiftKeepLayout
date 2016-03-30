@@ -1,15 +1,10 @@
 # SwiftKeepLayout
 
-[![CI Status](http://img.shields.io/travis/Tancrède Chazallet (AncAinu)/SwiftKeepLayout.svg?style=flat)](https://travis-ci.org/Tancrède Chazallet (AncAinu)/SwiftKeepLayout)
+This pod offers some handy attributes to [KeepLayout](https://github.com/Tricertops/KeepLayout) for Swift (see the [swift-legacy](https://github.com/Tricertops/KeepLayout/tree/swift-legacy) branch) to make it easier to use.
+
 [![Version](https://img.shields.io/cocoapods/v/SwiftKeepLayout.svg?style=flat)](http://cocoapods.org/pods/SwiftKeepLayout)
 [![License](https://img.shields.io/cocoapods/l/SwiftKeepLayout.svg?style=flat)](http://cocoapods.org/pods/SwiftKeepLayout)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftKeepLayout.svg?style=flat)](http://cocoapods.org/pods/SwiftKeepLayout)
-
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -18,11 +13,39 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "SwiftKeepLayout"
+pod 'KeepLayout', :git => 'https://github.com/Tricertops/KeepLayout.git', :branch => 'swift-legacy'
+```
+
+## Usage
+
+Once installed, you can fully use KeepLayout + SwiftKeepLayout by doing:
+
+```swift
+import KeepLayout
+import SwiftKeepLayout
+```
+
+Then you can do stuff like:
+```swift
+// With KeepLayout
+myView.keepTopInset.equal = KeepValueMake(CGFloat(30), Float(600))
+// With SwiftKeepLayout
+myView.keepTopInset.vEqual = (30, 600)
+
+// With KeepLayout
+myView.keepTopInset.required = 40.0
+// With SwiftKeepLayout
+myView.keepTopInset.vEqual = 40.0
+
+// With KeepLayout
+myView.keepTopInset.min = KeepHigh(20.0)
+// With SwiftKeepLayout
+myView.keepTopInset.vMin = (20.0, KeepPriorityHigh)
 ```
 
 ## Author
 
-Tancrède Chazallet (AncAinu), contact@ancainu.com
+Tancrède Chazallet, please use GitHub issue system if you wish to contact me about this repository.
 
 ## License
 
