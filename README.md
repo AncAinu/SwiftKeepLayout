@@ -13,15 +13,13 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "SwiftKeepLayout"
-pod 'KeepLayout', :git => 'https://github.com/Tricertops/KeepLayout.git', :branch => 'swift-legacy'
 ```
 
 ## Usage
 
-Once installed, you can fully use KeepLayout + SwiftKeepLayout by doing:
+Once installed, you can fully use KeepLayout + SwiftKeepLayout by doing, SwiftKeepLayout already include KeepLayout:
 
 ```swift
-import KeepLayout
 import SwiftKeepLayout
 ```
 
