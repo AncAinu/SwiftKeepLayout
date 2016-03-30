@@ -1,6 +1,5 @@
 import UIKit
 import XCTest
-import KeepLayout
 import SwiftKeepLayout
 
 class Tests: XCTestCase {

@@ -7,5 +7,3 @@ target 'SwiftKeepLayout_Tests', :exclusive => true do
 
   
 end
-
-pod 'KeepLayout', :git => 'https://github.com/Tricertops/KeepLayout.git', :branch => 'swift-legacy'

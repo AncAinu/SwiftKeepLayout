@@ -1,0 +1,14 @@
+PODS:
+  - SwiftKeepLayout (0.1.0)
+
+DEPENDENCIES:
+  - SwiftKeepLayout (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftKeepLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftKeepLayout: 5787453a5946576e7d9928b8d361d1aa421d757d
+
+COCOAPODS: 0.39.0

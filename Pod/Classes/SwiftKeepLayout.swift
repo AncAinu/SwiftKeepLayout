@@ -6,8 +6,6 @@
 //
 //
 
-import KeepLayout
-
 public extension KeepAttribute {
 	private func makeKeepValue(any: Any) -> KeepValue {
 		switch any {
